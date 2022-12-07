@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sigmar+One&display=swap');
+
+/* resets  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #23272a;
+    --blue-color: #0000ee;
+    --hover-text-color: #404eed;
+    --light-blue-color: #5865f2;
+    --white-color: #f6f6f6;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Sigmar One', cursive;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    font-family: 'Sigmar One', cursive;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-family: 'Sigmar One', cursive;
+}
+
+p {
+    color: var(--black-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utilities  */
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link:hover {
+    color: var(--hover-text-color);
+    box-shadow: 0 5px 10px grey;
+}
+
+.white-bg-btn {
+    background-color: white;
+    color: var(--black-color);
+    padding: 15px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.black-bg-btn {
+    background-color: var(--black-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.invert {
+    filter: invert(100%);
+}
+ 
+.blue {
+    color: var(--blue-color);
+}
+
+.white {
+    color: white;
+}
+
+.hover-effect:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* nav bar  */
+
+.background {
+    height: 85vh;
+    background-image: url("/assets/asset\ 0.svg");
+    background-position: center;
+    background: linear-gradient(to bottom, var(--blue-color), var(--light-blue-color));
+}
+
+.main-nav {
+    height: 90px;
+    justify-content: space-between;
+}
+
+.nav-links {
+    justify-content: space-between;
+    width: 45%;
+}
+
+.sm-bold-txt {
+    font-size: 0.9em;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 600;
+}
+
+/* header section  */
+
+.header-section {
+    height: 85%;
+    background-image: url("/assets/asset\ 0.svg");
+    background-position: center;
+}
+
+.left-image {
+    background-image: url("/assets/asset\ 1.svg");
+    width: 33%;
+    height: 67%;
+    align-self: flex-end;
+    background-position: right;
+}
+
+.right-image {
+    background-image: url("/assets/asset\ 2.svg");
+    width: 33%;
+    height: 68%;
+    align-self: flex-end;
+    background-position: left;
+}
+
+.header-section-one {
+    color: white;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    height: 58%;
+    width: 58%;
+}
+
+.header-section-one > p {
+    color: white;
+    width: 650px;
+    text-align: center;
+}
+
+.app-links {
+    gap: 15px;
+}
+
+.app-links > a {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.windows-btn {
+    gap: 5px;
+}
+
+.windows-btn > p > a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+/* discord group section  */
+
+.discord-grp {
+    margin-block: 100px;
+    padding: 40px 0;
+}
+
+.grp-right-section {
+    margin-left: 90px;
+    width: 25%;
+    height: 446px;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+/* voice channel section  */
+
+.voice-channel {
+    flex-direction: row-reverse;
+}
+
+.background-2 {
+    background-color: var(--white-color);
+    padding: 150px 0;
+}
+
+/* big picture section  */
+
+.big-pic-sec {
+    height: 185vh;
+}
+
+.inner-container {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-text {
+    margin-top: -50px;
+    text-align: center;
+    width: 896px;
+}
+
+.big-pic {
+    width: 100%;
+}
+
+.big-pic img {
+    width: 100%;
+}
+
+.blue-bg-btn {
+    background-color: var(--hover-text-color);
+    padding: 15px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.blue-bg-btn p a{
+    color: white;
+}
+
+
+.journey-section {
+    width: 50%;
+    padding-top: 30px;
+    background-image: url("/assets/asset\ 7.svg");
+    background-position-x: 55%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* footer section  */
+
+footer {
+    width: 100%;
+    height: 68vh;
+    background-color: var(--black-color);
+}
+
+.footer-links {
+    align-items: flex-start;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.left-text-section {
+    width: 20%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.countries p {
+    color: white;
+}
+
+.countries img {
+    width: 25px;
+}
+
+.countries {
+    gap: 10px;
+}
+
+.left-text-section h5 {
+    color: var(--light-blue-color);
+    font-size: 2rem;
+}
+
+.social-media {
+    gap: 20px;
+}
+
+
+.right-list-section {
+    align-items: flex-start;
+    gap: 130px;
+}
+
